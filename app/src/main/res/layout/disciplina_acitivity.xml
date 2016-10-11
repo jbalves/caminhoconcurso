@@ -12,11 +12,13 @@
         android:id="@+id/imageView" />
 
     <TextView
-        android:padding="16dp"
+        android:padding="17dp"
         android:elevation="2dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Planejar Acitivity"
-        android:id="@+id/textView" />
-
+        android:text="@string/textoDisciplina"
+        android:id="@+id/textView"
+        android:textSize="16sp"
+        android:fontFamily="casual"
+        android:textColor="@android:color/black"/>
 </LinearLayout>
