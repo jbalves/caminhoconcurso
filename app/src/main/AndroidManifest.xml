@@ -15,6 +15,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".PlanejarActivity" />
+        <activity android:name=".DisciplinaActivity" />
+        <activity android:name=".ObjetivosAcitivity" />
+        <activity android:name=".TempoActivity" />
+        <activity android:name=".TreinarActivity" />
+
     </application>
 
 </manifest>
