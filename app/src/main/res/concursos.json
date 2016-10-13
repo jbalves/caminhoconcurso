@@ -1,0 +1,34 @@
+{
+  "concursos": [
+    {
+      "orgao": "trt",
+      "estado": "am",
+      "ano": 2016,
+      "banca": "fcc",
+      "disciplicas": [
+        {
+          "portugues": true,
+          "raciocinioLogico": true,
+          "direitoAdministrativo": true,
+          "direitoCivil": true,
+          "direitoConstitucional": true
+        }
+      ]
+    },
+    {
+      "orgao": "dataprev",
+      "ano": 2016,
+      "estado": "sc",
+      "banca": "cetro",
+      "disciplicas": [
+        {
+          "portugues": true,
+          "raciocinioLogico": true,
+          "direitoAdministrativo": false,
+          "direitoCivil": false,
+          "direitoConstitucional": false
+        }
+      ]
+    }
+  ]
+}
