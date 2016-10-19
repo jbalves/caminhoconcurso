@@ -14,7 +14,7 @@ import org.json.JSONObject;
 
 import java.io.ObjectStreamException;
 
-public class MainActivity extends AppCompatActivity implements Request.RequestListener {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,35 +48,4 @@ public class MainActivity extends AppCompatActivity implements Request.RequestLi
         startActivity(intent);
     }
 
-    @Override
-    public void onRequestOk(String resposta, JSONObject jsonObject, int code) {
-        if (code == Request.NENHUM_ERROR) {
-            Log.d("Debug","resposta: " + resposta);
-
-            if (resposta !=null) {
-                try {
-
-                    JSONObject object = new JSONObject(resposta);
-
-                    JSONArray concursos = object.getJSONArray("concursos");
-
-                    for (int i = 0; i < concursos.length(); i++) {
-
-                        JSONObject concurso = concursos.getJSONObject(i);
-                        String orgao = concurso.getString("orgao");
-                        String estado = concurso.getString("estado");
-                        String ano = concurso.getString("ano");
-                        String banca = concurso.getString("banca");
-
-                        JSONArray livros = item.getJSONArray("livros");
-                        for (int j=0; j<livros.length();j++){
-                    }
-
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-
-    }
 }

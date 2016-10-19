@@ -16,11 +16,11 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".PlanejarActivity" android:label="Planejar"/>
-        <activity android:name=".DisciplinaActivity" android:label="Escolher Disciplina" />
-        <activity android:name=".ObjetivosAcitivity" android:label="Avaliar Objetivos" />
-        <activity android:name=".TempoActivity" android:label="Gerenciar Tempo" />
-        <activity android:name=".TreinarActivity" android:label="Treinar"/>
+        <activity android:name=".PlanejarActivity" android:label="Planejar" android:parentActivityName=".PlanejarActivity"/>
+        <activity android:name=".DisciplinaActivity" android:label="Escolher Disciplina" android:parentActivityName=".DisciplinaActivity"/>
+        <activity android:name=".ObjetivosAcitivity" android:label="Avaliar Objetivos" android:parentActivityName=".ObjetivosAcitivity"/>
+        <activity android:name=".TempoActivity" android:label="Gerenciar Tempo" android:parentActivityName=".TempoActivity"/>
+        <activity android:name=".TreinarActivity" android:label="Treinar" android:parentActivityName=".TreinarActivity"/>
 
     </application>
 
